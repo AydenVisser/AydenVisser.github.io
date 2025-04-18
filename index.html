@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-          background-color: #91C45A;
-      }
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
     <style type="text/css">
+    .container {
+      /*height: 100%;*/
+      width: 97%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: fixed;
+      /*align-items: center;
+      justify-content: center;*/
+    }
+    
+    body {
+          background-color: linen;
+          color: #04080F;
+          font-family: "Times New Roman";
+    }
+    
     h1 {
-        color: #04080F;
         font-size: 2.5em;
         text-align: right;
     }
@@ -16,13 +28,19 @@
     h2 {
       text-align: left;
     }
+    
     </style>
 </head>
 <body>
-<h1>Ayden Visser</h1>
-<h2>The Beginning</h2>
-<h2>The Middle</h2>
-<h2>The Beginning</h2>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+  <div style="display:flex; align-items: baseline;">
+    <p style="flex-shrink: 0">The life, times, and mistakes thereof<p>
+    <h1 style="flex-grow: 1">Ayden Visser</h1>
+    
+  </div>
+    <h2>Current life</h2>
+    <h2>Past life</h2>
+  </div>
+
 </body>
 </html>
