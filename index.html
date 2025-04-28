@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
     <style type="text/css">
-    .container {
+    .page_container {
       /*height: 100%;*/
-      width: 97%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       position: fixed;
-      /*align-items: center;
-      justify-content: center;*/
+      /*align-items: center;*/
+      justify-content: center;
     }
+
+	.header {
+		display: flex;
+		align-items: baseline;
+  		justify-content: center;
+	}
     
     body {
           background-color: linen;
           color: #04080F;
-          font-family: "Times New Roman";
+          font-family: "Inconsolata";
     }
     
     h1 {
-        font-size: 2.5em;
-        text-align: right;
+		font-size: 2.5em;
+		text-align: right;
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
     }
     
-    h2 {
-      text-align: left;
+	h2 {
+		text-align: left;
+   }
+
+	hr {
+		background-color: #04080F;
+		border-style: solid;
+		height: 1px;
+      	width: 30%;
     }
     
     </style>
 </head>
 <body>
-  <div class="container">
-  <div style="display:flex; align-items: baseline;">
-    <p style="flex-shrink: 0">The life, times, and mistakes thereof<p>
-    <h1 style="flex-grow: 1">Ayden Visser</h1>
-    
+  <div class="page_container">
+  	<div class="header">
+    		<p style="flex-shrink: 0; padding: 0em 0.3em 0em 0em">The life, times, and mistakes of<p>
+    		<h1 style="flex-grow: 0">Ayden Visser</h1>
+		<p style="flex-shrink: 0; padding: 0em 0em 0em 0em">in glorious, cobbled-together HTML.<p>
+  	</div>
+	<hr>
+    	<h2>Current life</h2>
+    	<h2>Past life</h2>
   </div>
-    <h2>Current life</h2>
-    <h2>Past life</h2>
-  </div>
-
 </body>
 </html>
